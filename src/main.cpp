@@ -1,7 +1,9 @@
 #include <Arduino.h>
 
+#include "epd.h"
+
 void setup() {
-// write your initialization code here
+
 }
 
 void loop() {
