@@ -1,0 +1,13 @@
+FILE(GLOB_RECURSE H_LIST ${CMAKE_CURRENT_LIST_DIR}/include/*.*)
+foreach(H_FILE IN LISTS H_LIST)
+    if (H_FILE MATCHES ".h$")
+        message(STATUS "Header File \"${H_FILE}\"")
+    endif()
+endforeach()
+
+foreach(SRC_FILE IN LISTS SRC_LIST)
+    if (SRC_FILE MATCHES ".cpp$")
+        message(STATUS "CXX File \"${SRC_FILE}\"")
+    endif()
+endforeach()
+
